@@ -8,7 +8,7 @@ export class UserService {
       uid: options.uid,
       username: 'mockedName',
       phone: '12345678901',
-      email: 'xxx.xxx@xxx.com',
+      email: 'xxx.xxx@xxx.coms',
     };
   }
 }
