@@ -12,6 +12,18 @@ export const mongoose: typegoose.DefaultConfig = {
   },
 };
 
+export const swagger = {
+  title: 'midway-admin',
+  description: 'vite-react-ts-admin 的后台接口',
+  version: '1.0.0',
+  termsOfService: '',
+  contact: {
+    name: 'JinPiKa',
+    url: 'https://gitee.com/jinxin0517/midway-jpk-jk',
+    email: '847164495@qq.com',
+  },
+};
+
 export default (appInfo: EggAppInfo) => {
   const config = {} as DefaultConfig;
 
