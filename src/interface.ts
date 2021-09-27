@@ -10,3 +10,10 @@ export interface IGetUserResponse {
   message: string;
   data: IUserOptions;
 }
+
+export interface IRuleRes<T> {
+  success: boolean;
+  message: string;
+  code: number;
+  data: T;
+}

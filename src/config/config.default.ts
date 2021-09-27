@@ -1,6 +1,16 @@
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
+import * as typegoose from '@midwayjs/typegoose';
 
 export type DefaultConfig = PowerPartial<EggAppConfig>;
+
+export const mongoose: typegoose.DefaultConfig = {
+  uri: 'mongodb://127.0.0.1:27017/',
+  options: {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    dbName: 'community',
+  },
+};
 
 export default (appInfo: EggAppInfo) => {
   const config = {} as DefaultConfig;
